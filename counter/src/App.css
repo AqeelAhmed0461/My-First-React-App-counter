@@ -1,0 +1,72 @@
+.app-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.5s ease;
+}
+
+.counter-display h1{
+    font-size: 3rem;
+    margin: 10px;
+    color: #333;
+}
+
+.button-container{
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+button{
+    align-self: center;
+    justify-self: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.increse-btn{
+    background-color: #1bda21;
+    color: white;
+}
+
+.increse-btn:hover {
+    background-color: #008507;
+    transform: scale(1.1);
+}
+
+.decrese-btn{
+    background-color: #f44336;
+    color: white;
+}
+.decrese-btn:hover {
+    background-color: #a70b09;
+    transform: scale(1.1);
+}
+
+.decrese-btn:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.reset-btn{
+    background-color: #007b9e;
+    color: white;
+}
+.reset-btn:hover{
+    background-color: #004052;
+    transform: scale(1.1);
+}
+
+.zero-message{
+    color: #660069;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
